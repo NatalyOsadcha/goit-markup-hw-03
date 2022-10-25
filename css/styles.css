@@ -58,24 +58,29 @@ li {
 
 /* Logo */
 .logo {
-  margin-right: 93px;
+  
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  
 }
-.footer .logo {
-  margin-right: 0;
-  color: #ffffff;
+.header-logo {
+margin-right: 93px;
+color: #000000;
 }
+
 .accent {
   color: var(--accent-color);
 }
 
 .logo:hover,
 .logo:focus {
+  color: var(--secondary-text-color);
+}
+.accent:hover,
+.accent:focus {
   color: var(--secondary-text-color);
 }
 
@@ -140,13 +145,15 @@ li {
   align-items: center;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Page Studio */
 
 /* Hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+ 
   background-color: var(--secondary-bg-color);
   text-align: center;
   letter-spacing: 0.06em;
@@ -183,10 +190,7 @@ li {
 }
 
 /* Work */
-.work {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .work-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -215,9 +219,7 @@ li {
 }
 
 /* Projects, Team */
-.project {
-  padding-bottom: 94px;
-}
+
 .title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -239,9 +241,7 @@ li {
 
 /* Team */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--accent-bg-color);
+   background-color: var(--accent-bg-color);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -285,6 +285,9 @@ li {
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
+.footer-logo {
+  color: #ffffff;
+}
 /* Address list */
 .address {
   margin-top: 20px;
@@ -313,11 +316,7 @@ li {
 }
 
 /* Page Portfolio */
-.portfolios {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  
-}
+
 
 .filter {
   display: flex;
@@ -347,25 +346,19 @@ li {
   color: #ffffff;
   cursor: pointer;
 }
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-}
+
 
 .portfolio-title {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding-left: 24px;
+  margin-top: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-text {
-  margin-top: 4px;
+  margin-top: 0;
   margin-bottom: 0;
-  padding-left: 24px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -377,8 +370,18 @@ li {
   color: var(--accent-color);
 }
 
-.portfolio-card {
+.portfolio-item {
+padding: 20px 24px;
   background: var(--primary-bg-color);
-  border: 1px solid #eeeeee;
-  padding-bottom: 20px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  
 }
+.portfolio-img {
+  display: block;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;}
